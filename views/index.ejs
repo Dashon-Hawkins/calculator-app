@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= Please select the function you want to do to the values: %></h1>
+    <form  action="/calc" method="POST">
+      <input type="radio" name="operation" value="add"> ADD
+      <input type="radio" name="operation" value="subtract"> SUBTRACT
+      <input type="radio" name="operation" value="multiply"> MULTIPLY
+      <input type="radio" name="operation" value="divide"> DIVIDE
+      <br/>
+      num1: <input type="number" name="num1">
+      num2: <input type="number" name="num2">
+      <br/>
+      <input type="submit" name="sub_btn" value="submit">
+    </form>
+  </body>
+</html>
